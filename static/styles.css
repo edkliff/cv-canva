@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto Light, Helvetica, sans-serif;
+    margin: 0;
+}
+
+a {
+    text-decoration: underline;
+    font-size: 26px;
+}
+
+.logo {
+    height: 100px;
+    width: 100px;
+}
+
+.header {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    color: #2f291f;
+}
+
+.header-main {
+    flex: 60%;
+    padding-left: 40px;
+}
+
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navbar {
+    overflow: hidden; /* Hide overflow */
+}
+
+.navbar a {
+    float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: underline; /* Remove underline */
+    color: #000f49;
+}
+
+.navbar a:hover {
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+.main {
+    flex: 80%;
+    padding: 20px;
+}
+
+.content {
+    flex-flow: row wrap;
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    justify-content: flex-start;
+    align-self: stretch;
+}
+
+.survey {
+    border: 1px solid;
+    border-radius: 6px;
+    align-content: center;
+    color: #2f291f;
+
+    padding: 10px;
+    max-width: 250px;
+    text-align: center;
+    margin: 10px;
+}
+
+.left {
+    flex: 10%; /* Set the width of the sidebar */
+    padding: 20px; /* Some padding */
+}
+
+.right {
+    flex: 10%;
+    padding: 20px;
+}
+
+@media (max-width: 700px) {
+    .row {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 400px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.footer {
+    align: end;
+    padding: 20px; /* Some padding */
+    text-align: center; /* Center text*/
+}
+
+.footer h2 {
+    color:#2f291f;
+}
+
